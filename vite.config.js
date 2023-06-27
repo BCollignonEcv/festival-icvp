@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite'
+import { defineConfig, loadEnv } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import path from 'path';
 
@@ -13,6 +13,6 @@ export default defineConfig({
       '@': path.resolve('src'),
     }
   },
-  base: import.meta.env.BASE_URL,
+  // base: '/', // TO USE FOR PRODUCTION BUILD
+  base: '/festival-icvp/',
 })
-

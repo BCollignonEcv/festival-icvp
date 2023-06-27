@@ -1,4 +1,7 @@
 #!/usr/bin/env sh
+
+# Do not forget to change "base: " in vite.config.js
+
 # abort on errors
 set -e
 

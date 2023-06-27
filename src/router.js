@@ -1,9 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../pages/p_home.vue'
+import Home from '@/pages/p_home.vue'
 
 const router = createRouter({
-    history: createWebHistory(
-        import.meta.env.BASE_URL),
+    history: createWebHistory(import.meta.env.BASE_URL),
     routes: [{
         path: '',
         name: 'home',
@@ -13,13 +12,13 @@ const router = createRouter({
         path: '/programme',
         name: 'Programme',
         component: () =>
-            import('../pages/p_programme.vue'),
+            import('@/pages/p_programme.vue'),
     },
     {
         path: '/contact',
         name: 'Contact',
         component: () =>
-            import('../pages/p_contact.vue'),    
+            import('@/pages/p_contact.vue'),    
     },
     {
         path: '/:pathMatch(.*)*',
@@ -29,7 +28,7 @@ const router = createRouter({
         path: '/404',
         name: 'NotFound',
         component: () =>
-            import('../pages/p_notFound.vue')
+            import('@/pages/p_notFound.vue')
     },
     ]
 })

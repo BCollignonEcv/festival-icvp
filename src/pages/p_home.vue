@@ -1,13 +1,84 @@
 <template lang="">
-    <div>
-        
-    </div>
+    <c_videoLanding></c_videoLanding>
+    <c_section :_size="100" class="c_splited">
+        <div class="c_splited--title">
+            <h2>Evènement</h2>
+            <c_countdown></c_countdown>
+        </div>
+        <div class="c_splited--content">
+            <h3>Découvrir le Festivale de Cerf-volant de Paris</h3>
+            <c_collapse :_collapsed="true">
+                <template v-slot:header>
+                    <p>Description</p>
+                </template>
+                <template v-slot:content>
+                    <p>Rejoignez-nous pour une expérience unique au cœur de la magie et de l'écologie. Du 10 au 14 avril, Paris la Défense sera le théâtre d'un événement inoubliable qui mêlera la beauté des cerfs-volants, le respect de l'environnement et le bonheur des petits et des grands.</p>
+                    <p>Laissez-vous émerveiller par les danses aériennes des cerfs-volants multicolores, portés par le vent. Admirez les créations uniques d'artistes talentueux venus du monde entier. </p>
+                </template>
+            </c_collapse>
+            <c_collapse>
+                <template v-slot:header>
+                    <p>Pour qui ?</p>
+                </template>
+                <template v-slot:content>
+                    <p>Rejoignez-nous pour une expérience unique au cœur de la magie et de l'écologie. Du 10 au 14 avril, Paris la Défense sera le théâtre d'un événement inoubliable qui mêlera la beauté des cerfs-volants, le respect de l'environnement et le bonheur des petits et des grands.</p>
+                    <p>Laissez-vous émerveiller par les danses aériennes des cerfs-volants multicolores, portés par le vent. Admirez les créations uniques d'artistes talentueux venus du monde entier. </p>
+                </template>
+            </c_collapse>
+            <c_collapse>
+                <template v-slot:header>
+                    <p>Informations pratiques</p>
+                </template>
+                <template v-slot:content>
+                    <p>Rejoignez-nous pour une expérience unique au cœur de la magie et de l'écologie. Du 10 au 14 avril, Paris la Défense sera le théâtre d'un événement inoubliable qui mêlera la beauté des cerfs-volants, le respect de l'environnement et le bonheur des petits et des grands.</p>
+                    <p>Laissez-vous émerveiller par les danses aériennes des cerfs-volants multicolores, portés par le vent. Admirez les créations uniques d'artistes talentueux venus du monde entier. </p>
+                </template>
+            </c_collapse>
+        </div>
+    </c_section>
+
 </template>
 <script>
+import { c_videoLanding, c_presentation, c_countdown } from '@/components/custom/index';
+import { c_section, c_collapse } from '@/components/ui/wrappers/index';
+
 export default {
-    
+    components: {
+        c_videoLanding, c_presentation, c_countdown,
+        c_section, c_collapse
+    },
 }
 </script>
-<style lang="">
-    
+<style lang="scss">
+
+    .c_splited {
+        display: flex;
+        gap: var(--m-4);
+
+        &--title{
+            flex: 1;
+            padding-left: var(--m-4);
+            padding-top: var(--m-1);
+
+
+            h2 {
+                text-transform: uppercase;
+                font-size: var(--fs-3);
+                color: var(--c-1-100);
+                margin-bottom: var(--m-5);
+            }
+        }
+
+        &--content{
+            flex: 3;
+            padding-top: var(--m-1);
+
+
+            h3 {
+                font-size: var(--fs-3);
+                font-weight: normal;
+                margin-bottom: var(--m-4);
+            }
+        }
+    }
 </style>

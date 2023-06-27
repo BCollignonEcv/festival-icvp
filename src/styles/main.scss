@@ -1,5 +1,17 @@
-h1{
+*{
+    box-sizing: border-box;
+    font-family: Gotham;
+}
 
+body{
+    background-color: var(--c-3-100);
+}
+
+h1{
+    font-size: var(--fs-1);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
 }
 
 h2{
@@ -11,9 +23,22 @@ h3{
 }
 
 h4{
-    
+    font-size: var(--fs-2);
 }
 
 h5{
     
+}
+
+a, .router-link, .router-link-active{
+    transition: 1s;
+    &:hover{
+        color: var(--c-1-100);
+        cursor: pointer;
+        transition: .5s;
+    }
+}
+
+.c_hightlightText{
+    color: var(--c-1-100);
 }

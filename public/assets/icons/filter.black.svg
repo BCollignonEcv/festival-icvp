@@ -1,0 +1,8 @@
+<svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="6" y1="18.25" x2="24" y2="18.25" stroke="black"/>
+<rect x="0.5" y="15.5" width="5" height="5" rx="1.5" stroke="black"/>
+<line x1="18" y1="10.25" y2="10.25" stroke="black"/>
+<rect x="23.5" y="13" width="5" height="5" rx="1.5" transform="rotate(-180 23.5 13)" fill="black" stroke="black"/>
+<line x1="6" y1="3.25" x2="24" y2="3.25" stroke="black"/>
+<rect x="0.5" y="0.5" width="5" height="5" rx="1.5" stroke="black"/>
+</svg>

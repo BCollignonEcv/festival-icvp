@@ -1,30 +1,30 @@
 // Custom Font Bold
 @font-face {
-    font-family: CustomFont;
-    src: url("@/assets/fonts/Custom_Coll-DemiBold.ttf") format("truetype");
+    font-family: Gotham;
+    src: url("@/assets/fonts/Gotham-Bold.otf") format("truetype");
     font-weight: bold;
     font-style: normal;
 }
 
 // Custom Font Lighter
 @font-face {
-    font-family: CustomFont;
-    src: url("@/assets/fonts/Custom_Coll-Light.ttf") format("truetype");
+    font-family: Gotham;
+    src: url("@/assets/fonts/Gotham-Light.otf") format("truetype");
     font-weight: lighter;
     font-style: normal;
 }
 
 // Custom Font Regular
 @font-face {
-    font-family: CustomFont;
-    src: url("@/assets/fonts/Custom_Coll-Regular.ttf") format("truetype");
+    font-family: Gotham;
+    src: url("@/assets/fonts/Gotham-Medium.otf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
 :root {
     font-size: 16px;
-    font-family: "CustomFont";
+    font-family: "Gotham";
     font-weight: bold;
     --c-0-100: rgba(256, 256, 256);
     --c-0-75: rgba(256, 256, 256, 0.75);

@@ -13,6 +13,6 @@ export default defineConfig({
       '@': path.resolve('src'),
     }
   },
-  base: import.meta.env.BASE_URL,
+  base: '/festival-icvp/',
 })
 

@@ -1,0 +1,61 @@
+// Custom Font Bold
+@font-face {
+    font-family: CustomFont;
+    src: url("@/assets/fonts/Custom_Coll-DemiBold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+// Custom Font Lighter
+@font-face {
+    font-family: CustomFont;
+    src: url("@/assets/fonts/Custom_Coll-Light.ttf") format("truetype");
+    font-weight: lighter;
+    font-style: normal;
+}
+
+// Custom Font Regular
+@font-face {
+    font-family: CustomFont;
+    src: url("@/assets/fonts/Custom_Coll-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    font-size: 16px;
+    font-family: "CustomFont";
+    font-weight: bold;
+    --c-0-100: rgba(256, 256, 256);
+    --c-0-75: rgba(256, 256, 256, 0.75);
+    --c-0-50: rgba(256, 256, 256, 0.5);
+    --c-0-25: rgba(256, 256, 256, 0.25);
+    --c-1-100: rgb(230, 67, 0);
+    --c-1-75: rgba(230, 67, 0, 0.75);
+    --c-1-50: rgba(230, 67, 0, 0.5);
+    --c-1-25: rgba(230, 67, 0, 0.25);
+    --c-1-10: rgba(230, 67, 0, 0.1);
+    --c-2-100: rgb(61, 215, 56);
+    --c-2-75: rgba(61, 215, 56, 0.75);
+    --c-2-50: rgba(61, 215, 56, 0.5);
+    --c-2-25: rgba(61, 215, 56, 0.25);
+    --c-2-10: rgba(61, 215, 56, 0.1);
+    --c-3-100: rgb(22, 22, 22);
+    --c-3-75: rgba(22, 22, 22, 0.75);
+    --c-3-50: rgba(22, 22, 22, 0.5);
+    --c-3-25: rgba(22, 22, 22, 0.25);
+    --c-3-10: rgba(22, 22, 22, 0.1);
+    --c-4-100: #000;
+    --c-5-100: #000;
+    --header-size: 50px;
+    --fs-1: 3rem;
+    --fs-2: 2.4rem;
+    --fs-3: 2rem;
+    --fs-4: 1.4rem;
+    --fs-5: 1.2rem;
+    --m-1: 3rem;
+    --m-2: 2.4rem;
+    --m-3: 2rem;
+    --m-4: 1.6rem;
+    --m-5: 1rem;
+}

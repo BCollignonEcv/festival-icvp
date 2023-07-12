@@ -50,8 +50,8 @@ export default {
 <style lang="scss">
 
 .c_collapse {
-    border-bottom: 2px solid var(--c-3-100);
-    padding: var(--m-4) 0;
+    border-bottom: 2px solid $c-3-100;
+    padding: $m-4 0;
 
     & &-header {
         display: flex;
@@ -61,7 +61,7 @@ export default {
         cursor: pointer;
 
         p {
-            font-size: var(--fs-4);
+            font-size: $fs-4;
             text-transform: uppercase;
             font-weight: bold;
         }
@@ -74,19 +74,19 @@ export default {
         width: 80%;
 
         p:first-of-type {
-            padding-top: var(--m-4);
+            padding-top: $m-5;
         }
 
         p {
-            font-size: var(--fs-6);
+            font-size: $fs-6;
             font-weight: lighter;
             text-align: justify;
-            padding-top: var(--m-5);
+            padding-top: $m-6;
         }
     }
 
     & &-icon {
-        margin-right: var(--m-4);
+        margin-right: $m-4;
         transition: all .2s ease-out;
 
         &.open {

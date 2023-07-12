@@ -36,7 +36,6 @@ export default {
 }
 </script>
 <style lang="scss">
-
 .c_videoLanding {
     position: relative;
     height: 100vh;
@@ -54,27 +53,26 @@ export default {
     position: absolute;
     top: 0;
     left: 0;
-    max-width: 50vw;
-    width: min-content;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     z-index: 2;
-    gap: var(--m-5);
+    gap: $m-5;
 
     .c_overlayItem {
         position: relative;
         display: flex;
         flex-direction: column;
-        background-color: var(--c-0-75);
-        padding: var(--m-4);
+        background-color: $c-w-75;
+        padding: $m-4;
         overflow: auto;
 
         &.c_overlayItem--img {
             flex-grow: 2;
 
             img {
-                width: auto;
+                min-width: 400px;
+                width: 35vw;
                 height: 100%;
                 object-fit: contain;
             }
@@ -86,13 +84,13 @@ export default {
 
 
         .c_itemLabel {
-            font-size: var(--fs-3);
-            color: var(--c-1-100);
+            font-size: $fs-3;
+            color: $c-1-100;
             margin-bottom: .3rem;
         }
 
         .c_itemDescription {
-            font-size: var(--fs-5);
+            font-size: $fs-5;
         }
     }
 }

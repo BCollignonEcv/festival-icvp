@@ -47,15 +47,15 @@ export default {
 
 .countdown {
   display: flex;
-  gap: var(--m-4);
+  gap: $m-4;
 }
 
 .countdown-value {
-  font-size: var(--fs-3);
+  font-size: $fs-3;
   font-weight: bold;
 }
 
 .countdown-label {
-  font-size: var(--fs-6);
+  font-size: $fs-6;
 }
 </style>

@@ -1,0 +1,1 @@
+import{_ as c,c as e,a as t,b as s,d as n,r as a,o as _,e as r,w as p,f as i}from"./index-f0766abe.js";const d={components:{c_videoLanding:e,c_countdown:t,c_section:s,c_collapse:n}},l=i("h2",null,"Page contact",-1);function f(u,m,h,x,$,w){const o=a("c_section");return _(),r(o,{_size:100},{default:p(()=>[l]),_:1})}const g=c(d,[["render",f]]);export{g as default};

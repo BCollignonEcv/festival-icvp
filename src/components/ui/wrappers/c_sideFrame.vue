@@ -52,7 +52,7 @@ $frameWidth: 50vw;
     right: 0;
     width: $frameWidth;
     min-height: 100vh;
-    background-color: var(--c-0-100);
+    background-color: $c-w-100;
     box-shadow: 0 0 0 999em rgba(0, 0, 0, 0.8);
 
     .left {
@@ -60,11 +60,11 @@ $frameWidth: 50vw;
     }
 
     &__header {
-        height: var(--header-size);
-        padding: 0 var(--m-4);
+        height: $hs;
+        padding: 0 $m-4;
         font-weight: bold;
         display: flex;
-        gap: var(--m-4);
+        gap: $m-4;
         align-items: center;
         justify-content: space-between;
 
@@ -74,7 +74,7 @@ $frameWidth: 50vw;
     }
 
     &__content {
-        padding: 0 var(--m-4);
+        padding: 0 $m-4;
     }
 }
 

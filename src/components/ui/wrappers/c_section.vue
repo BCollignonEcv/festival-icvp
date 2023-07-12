@@ -19,7 +19,7 @@ export default {
 <style lang="scss" scoped>
 
 .c_section {
-    padding: var(--m-2);
+    padding: $m-2;
 
     &-100 {
         height: 100vh;

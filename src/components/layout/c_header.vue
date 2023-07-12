@@ -100,6 +100,7 @@ export default {
 </script>
 <style lang="scss">
 $scaler:1.75;
+
 .c_header {
     position: relative;
     z-index: 50;
@@ -115,25 +116,25 @@ $scaler:1.75;
             top: 0;
             left: 0;
             width: 100%;
-            height: var(--header-size);
+            height: $hs;
 
             h1 {
-                font-size: var(--fs-6);
-                color: var(--c-3-100);
+                font-size: $fs-6;
+                color: $c-3-100;
             }
         }
 
         &--right {
             top: 0;
             right: 0;
-            width: var(--header-size);
+            width: $hs;
             height: 100%;
         }
 
         &--left {
             top: 0;
             left: 0;
-            width: var(--header-size);
+            width: $hs;
             height: 100%;
         }
 
@@ -141,7 +142,7 @@ $scaler:1.75;
             bottom: 0;
             left: 0;
             width: 100%;
-            height: var(--header-size);
+            height: $hs;
         }
     }
 
@@ -167,9 +168,9 @@ $scaler:1.75;
     }
 
     .c_menuBuger {
-        background-color: var(--c-1-100);
-        height: calc(var(--header-size)*$scaler);
-        width: calc(var(--header-size)*$scaler);
+        background-color: $c-1-100;
+        height: $hs*$scaler;
+        width: $hs*$scaler;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -177,12 +178,12 @@ $scaler:1.75;
         transition: .5s;
 
         &:hover {
-            background-color: var(--c-3-100);
+            background-color: $c-3-100;
         }
     }
 
     .c_menuBugerFrame {
-        height: calc(100vh - 2 * var(--header-size));
+        height: calc(100vh - 2 * $hs);
         display: flex;
         flex-direction: column;
         justify-content: space-around;

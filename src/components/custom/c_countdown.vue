@@ -51,7 +51,7 @@ export default {
 }
 
 .countdown-value {
-  font-size: $fs-3;
+  font-size: $fs-huge;
   font-weight: bold;
 }
 

@@ -46,17 +46,17 @@
                 </li>
                 <li class="c_headerNav-item">
                     <router-link to="/">
-                        <c_icon :_name="'home'"></c_icon>
+                        <c_icon :_name="'home'" :_size="'small'" :_overlayLabel="'Acceuil'" _overlayPosition="left"></c_icon>
                     </router-link>
                 </li>
                 <li class="c_headerNav-item">
                     <router-link to="/programme">
-                        <c_icon :_name="'calendar'"></c_icon>
+                        <c_icon :_name="'calendar'" :_size="'small'" :_overlayLabel="'Programme'" _overlayPosition="left"></c_icon>
                     </router-link>
                 </li>
                 <li class="c_headerNav-item">
                     <router-link to="/contact">
-                        <c_icon :_name="'chat'"></c_icon>
+                        <c_icon :_name="'chat'" :_size="'small'" :_overlayLabel="'Contact'" _overlayPosition="left"></c_icon>
                     </router-link>
                 </li>
             </ul>
@@ -65,13 +65,13 @@
         <div class="c_headerBar c_headerBar--left">
             <ul class="c_headerNav">
                 <li class="c_headerNav-item">
-                    <c_icon :_name="'facebook'"></c_icon>
+                    <c_icon :_name="'facebook'" :_size="'small'"></c_icon>
                 </li>                
                 <li class="c_headerNav-item">
-                    <c_icon :_name="'instagram'"></c_icon>
+                    <c_icon :_name="'instagram'" :_size="'small'"></c_icon>
                 </li>
                 <li class="c_headerNav-item">
-                    <c_icon :_name="'linkedin'"></c_icon>
+                    <c_icon :_name="'linkedin'" :_size="'small'"></c_icon>
                 </li>
             </ul>
         </div>
@@ -99,7 +99,8 @@ export default {
 }
 </script>
 <style lang="scss">
-$scaler:1.75;
+
+$scaler:2;
 
 .c_header {
     position: relative;

@@ -60,7 +60,7 @@ export default {
         align-items: center;
         cursor: pointer;
 
-        p {
+        h4 {
             font-size: $fs-4;
             text-transform: uppercase;
             font-weight: bold;
@@ -71,11 +71,7 @@ export default {
         overflow: hidden;
         max-height: 0;
         transition: max-height 0.2s ease-out;
-        width: 80%;
-
-        p:first-of-type {
-            padding-top: $m-5;
-        }
+        width: 90%;
 
         p {
             font-size: $fs-6;

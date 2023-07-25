@@ -8,11 +8,11 @@
                 <img :src="`../..${baseUrl}assets/images/logo.png`" alt="" srcset="">
             </div>
             <div class="c_overlayItem c_overlayItem--content">
-                <p class="c_itemLabel">10 avril 2024</p>
+                <p class="c_itemLabel">10 au 14 avril 2024</p>
                 <span class="c_itemDescription">Date</span>
             </div>
             <div class="c_overlayItem c_overlayItem--content">
-                <p class="c_itemLabel">Paris la Défense</p>
+                <p class="c_itemLabel">Esplanade de Paris la Défense</p>
                 <span class="c_itemDescription">Lieu</span>
             </div>
         </c_section>

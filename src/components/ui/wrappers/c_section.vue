@@ -1,5 +1,5 @@
 <template>
-    <section :class="`c_section c_section-${_size}`">
+    <section :class="`c_section c_section-${_size} c_section-${_type}`">
         <slot></slot>
     </section>
 </template>
@@ -12,6 +12,10 @@ export default {
             type: Number,
             default: 0
         },
+        _type: {
+            type: String,
+            default: 'full'
+        },
     },
 }
 </script>
@@ -19,7 +23,6 @@ export default {
 <style lang="scss" scoped>
 
 .c_section {
-    padding: $m-2;
 
     &-100 {
         height: 100vh;
@@ -27,6 +30,14 @@ export default {
 
     &-0 {
         height: auto;
+    }
+
+    &-full{
+        padding: $m-2;
+    }
+
+    &-text{
+        padding: $m-2 calc($m-2*2);
     }
 }
 </style>

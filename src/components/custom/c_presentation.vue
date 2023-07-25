@@ -1,35 +1,15 @@
 <template lang="">
-    <div class="c_presentation">
-        <figure class="c_presentation-img">
-            <img :src="`../..${baseUrl}assets/images/landing.jpg`" alt="" srcset="">
-            <figcaption class="c_presentation-img--title">
-                <h3>Paris la Défense</h3>
-                <p>Un lieu <span class="c_hightlightText">Unique</span></p>
-            </figcaption>
-        </figure>
-        <aside class="c_presentation-aside">
-            <div class="c_presentation-aside--groupe">
-                <p class="c_presentation-aside--fact">180 000</p>
-                <p class="c_presentation-aside--unit">Salariés</p>
-            </div>
-            <div class="c_presentation-aside--groupe">
-                <p class="c_presentation-aside--fact">70 000</p>
-                <p class="c_presentation-aside--unit">Etudiants</p>
-            </div>
-            <div class="c_presentation-aside--groupe">
-                <p class="c_presentation-aside--fact">50 000</p>
-                <p class="c_presentation-aside--unit">Habitants</p>
-            </div>
-            <div class="c_presentation-aside--groupe">
-                <p class="c_presentation-aside--fact">70</p>
-                <p class="c_presentation-aside--unit">Oeuvres d'art</p>
-            </div>
-            <div class="c_presentation-aside--groupe">
-                <p class="c_presentation-aside--fact">131</p>
-                <p class="c_presentation-aside--unit">Ha végétalisés</p>
-            </div>
-        </aside>
-    </div>
+        <div :class="`c_presentation ${_color}`">
+            <figure class="c_presentation-img">
+                <img :src="`../..${baseUrl}assets/images/${_imgName}`" alt="" srcset="">
+                <figcaption class="c_presentation-img--title">
+                    <slot name="title"></slot>
+                </figcaption>
+            </figure>
+            <aside :class="`c_presentation-aside as-${_asideSize}`">
+                <slot name="aside"></slot>
+            </aside>
+        </div>
 </template>
 
 <script>
@@ -39,6 +19,19 @@ export default {
             baseUrl: import.meta.env.BASE_URL
         }
     },
+    props: {
+        _imgName: {
+            type: String,
+            default: 'landing.jpg'
+        },
+        _asideSize: {
+            type: Number,
+        },
+        _color: {
+            type: String,
+            default: 'primary'
+        }
+    }
 }
 </script>
 <style lang="scss">
@@ -46,6 +39,18 @@ export default {
     height: 100%;
     width: 100%;
     position: relative;
+
+    &.primary {
+        .c_presentation-aside {
+            background-color: $c-1-100;
+        } 
+    }
+
+    &.secondary {
+        .c_presentation-aside {
+            background-color: $c-2-100;
+        } 
+    }
 
     &-img {
         height: 100%;
@@ -71,16 +76,11 @@ export default {
             justify-content: flex-end;
 
             p {
-                font-size: $fs-3;
-            }
-
-            h3 {
                 font-size: $fs-1;
             }
 
-            p,
             h3 {
-                color: $c-w-100;
+                font-size: $fs-huge;
             }
         }
 
@@ -90,30 +90,38 @@ export default {
         position: absolute;
         top: 0;
         right: 0;
-        background-color: $c-1-100;
         height: 100%;
         display: flex;
         flex-direction: column;
 
-        & &--groupe:not(:first-of-type) {
-            border-top: 1px solid $c-3-100;
+        &.as-20{
+            width: 20%;
+            padding: $m-4;
         }
 
-        & &--groupe {
-            padding: 0 $m-2;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+        &.as-30{
+            width: 30%;
+            padding: $m-4;
         }
 
-        & &--fact {
-            font-size: $fs-1;
-            margin-bottom: $m-8;
+        &.as-40{
+            width: 40%;
+            padding: $m-2;
         }
 
-        & &--unit {
-            font-size: $fs-4;
+        &.as-50{
+            width: 50%;
+            padding: $m-2;
+        }
+
+        h3 {
+            text-transform: uppercase;
+            margin-bottom: $m-4;
+        }
+
+        p {
+            font-size: $fs-5;
+            font-weight: normal;
         }
     }
 

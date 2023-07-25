@@ -32,6 +32,7 @@ export default {
     display: flex;
     gap: 1rem;
     align-items: center;
+    flex-wrap: nowrap;
 
     &.reverse{
         flex-direction: row-reverse;

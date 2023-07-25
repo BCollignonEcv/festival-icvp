@@ -1,5 +1,8 @@
 <template lang="">
+    <!-- SECTION 1 -->
     <c_videoLanding></c_videoLanding>
+
+    <!-- SECTION 2 -->
     <c_section class="c_splited">
         <div class="c_splited--title">
             <h2>Evènement</h2>
@@ -9,29 +12,75 @@
             <h3>Découvrir le Festivale de Cerf-volant de Paris</h3>
             <c_collapse :_collapsed="true">
                 <template v-slot:header>
-                    <p>Description</p>
+                    <h4>Description</h4>
                 </template>
                 <template v-slot:content>
-                    <p>Rejoignez-nous pour une expérience unique au cœur de la magie et de l'écologie. Du 10 au 14 avril, Paris la Défense sera le théâtre d'un événement inoubliable qui mêlera la beauté des cerfs-volants, le respect de l'environnement et le bonheur des petits et des grands.</p>
-                    <p>Laissez-vous émerveiller par les danses aériennes des cerfs-volants multicolores, portés par le vent. Admirez les créations uniques d'artistes talentueux venus du monde entier. </p>
+                    <p>Le premier festival urbain de cerfs-volants en Europe est un événement grand public qui se déroulera sur le parvis de la grande arche de PARIS LA DEFENSE du 10 au 14 Avril 2024. Le festival se compose de 4 zones avec des activités différentes.</p>
+                    <ul>
+                        <li>Les cerfs-volants géants : Une odyssée éclatante, féérique et démesurée.</li>
+                    </ul>
                 </template>
             </c_collapse>
             <c_collapse>
                 <template v-slot:header>
-                    <p>Pour qui ?</p>
+                    <h4>Pour qui ?</h4>
                 </template>
                 <template v-slot:content>
-                    <p>Rejoignez-nous pour une expérience unique au cœur de la magie et de l'écologie. Du 10 au 14 avril, Paris la Défense sera le théâtre d'un événement inoubliable qui mêlera la beauté des cerfs-volants, le respect de l'environnement et le bonheur des petits et des grands.</p>
-                    <p>Laissez-vous émerveiller par les danses aériennes des cerfs-volants multicolores, portés par le vent. Admirez les créations uniques d'artistes talentueux venus du monde entier. </p>
+                    <p>Le festival est un événement grand public. Enfants, familles, amis, adolescents, seul, en groupe, à deux... Le festival est le lieu pour s'émerveiller, rêver et se rapprocher des étoiles.</p>
                 </template>
             </c_collapse>
             <c_collapse>
                 <template v-slot:header>
-                    <p>Informations pratiques</p>
+                    <h4>Informations pratiques</h4>
                 </template>
                 <template v-slot:content>
-                    <p>Rejoignez-nous pour une expérience unique au cœur de la magie et de l'écologie. Du 10 au 14 avril, Paris la Défense sera le théâtre d'un événement inoubliable qui mêlera la beauté des cerfs-volants, le respect de l'environnement et le bonheur des petits et des grands.</p>
-                    <p>Laissez-vous émerveiller par les danses aériennes des cerfs-volants multicolores, portés par le vent. Admirez les créations uniques d'artistes talentueux venus du monde entier. </p>
+                    <div class="c_flexContainer">
+                        <div>
+                            <br>
+                            <c_textIcon :_name="'rer'" :_size="'normal'">
+                                <c_textIcon :_name="'rer-a'" :_size="'small'">Arrêt : La Défense Grande Arche</c_textIcon>
+                            </c_textIcon>
+                            <br>
+                            <c_textIcon :_name="'transilien'" :_size="'normal'">
+                                <c_textIcon :_name="'transilien-u'" :_size="'small'"></c_textIcon>
+                                <c_textIcon :_name="'transilien-l'" :_size="'small'">Arrêt : La Défense Grande Arche</c_textIcon>
+                            </c_textIcon>
+                            <br>
+                            <c_textIcon :_name="'tramway'" :_size="'normal'">
+                                <c_textIcon :_name="'tramway-2'" :_size="'small'">Arrêt : La Défense Grande Arche</c_textIcon>
+                            </c_textIcon>
+                            <br>
+                            <c_textIcon :_name="'metro'" :_size="'normal'">
+                                <c_textIcon :_name="'metro-1'" :_size="'small'">Arrêt : La Défense Grande Arche ou Esplanade de La Défense</c_textIcon>
+                            </c_textIcon>
+                            <br>
+                            <c_textIcon :_name="'bus'" :_size="'normal'">
+                                <c_textIcon :_name="'bus-141'" :_size="'normal'"></c_textIcon>
+                                <c_textIcon :_name="'bus-144'" :_size="'normal'"></c_textIcon>
+                                <c_textIcon :_name="'bus-159'" :_size="'normal'"></c_textIcon>
+                                <c_textIcon :_name="'bus-160'" :_size="'normal'"></c_textIcon>
+                                <!-- <c_textIcon :_name="'bus-161'" :_size="'normal'"></c_textIcon> -->
+                                <c_textIcon :_name="'bus-174'" :_size="'normal'"></c_textIcon>
+                                <!-- <c_textIcon :_name="'bus-246'" :_size="'normal'"></c_textIcon> -->
+                                <c_textIcon :_name="'bus-258'" :_size="'normal'"></c_textIcon>
+                                <c_textIcon :_name="'bus-262'" :_size="'normal'"></c_textIcon>
+                                <c_textIcon :_name="'bus-272'" :_size="'normal'"></c_textIcon>
+                                <c_textIcon :_name="'bus-275'" :_size="'normal'"></c_textIcon>
+                                <c_textIcon :_name="'bus-360'" :_size="'normal'"></c_textIcon>
+                                <c_textIcon :_name="'bus-378'" :_size="'normal'"></c_textIcon>
+                                <!-- <c_textIcon :_name="'bus-451'" :_size="'normal'"></c_textIcon> -->
+                                <p>Balabus</p>
+                            </c_textIcon>
+                            <br>
+                            <c_textIcon :_name="'bus'" :_size="'normal'">
+                                <c_textIcon :_name="'bus-n24'" :_size="'normal'"></c_textIcon>
+                                <!-- <c_textIcon :_name="'bus-n152'" :_size="'normal'"></c_textIcon> -->
+                            </c_textIcon>
+                        </div>
+                        <div>
+                            <c_googleMap :_url="'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5246.531796719874!2d2.2354092278159428!3d48.891269517162755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66503b3dac63b%3A0xcd3fb755c3fe671e!2sParvis%20de%20la%20D%C3%A9fense!5e0!3m2!1sfr!2sfr!4v1690158608007!5m2!1sfr!2sfr'"></c_googleMap>
+                        </div>
+                    </div>
                 </template>
             </c_collapse>
             <div class="c_fakeCollapseLink">
@@ -42,23 +91,107 @@
             </div>
         </div>
     </c_section>
+
+    <!-- SECTION 3 -->
     <c_section :_size="100">
-        <c_presentation></c_presentation>
+        <c_presentation _color="primary" _imgName="landing.jpg">
+            <template v-slot:title>
+                <div class="c_overlayTitle">
+                    <h3>Paris la Défense</h3>
+                    <p>Un lieu <span class="c_hightlightText">Unique</span></p>
+                </div>
+            </template>
+            <template v-slot:aside>
+                <c_textFact v-for="fact in dataStore.getFacts" :_fact="fact"></c_textFact>
+            </template>
+        </c_presentation>
     </c_section>
-    <c_section :_size="100" style="background-color: black">
-        
+
+    <!-- SECTION 4 -->
+    <c_section _type="text" class="bg-black">
+        <c_textTitle :_size="3">Club des 3</c_textTitle>
+        <c_carrousel>
+            <c_premiumSponsorItem v-for="sponsor in dataStore.getPremiumSponsors" :_sponsor="sponsor"></c_premiumSponsorItem>
+        </c_carrousel>
     </c_section>
+
+    <!-- SECTION 5 -->
+    <c_section :_size="100" >
+        <c_presentation _asideSize="40" _color="secondary">
+            <template v-slot:title>
+                    <div class="c_overlayTitle">
+                    <p>Promouvoir un loisir</p>
+                    <h3>Responsable et <span class="c_hightlightText">durable</span></h3>
+                </div>
+            </template>
+            <template v-slot:aside>
+                <h3>Une aventure<br>durable</h3>
+                <p>Les valeurs portées par le cerf-volant à travers les siècles retrouvent écho et notoriété à l'heure du réchauffement climatique.</p>
+
+                <ul class="c_keywords">
+                    <li><c_textIcon _size="normal" _color="orange">Durabilité</c_textIcon></li>
+                    <li><c_textIcon _size="normal" _color="orange">Energie</c_textIcon></li>
+                    <li><c_textIcon _size="normal" _color="orange">Inclusion</c_textIcon></li>
+                    <li><c_textIcon _size="normal" _color="orange">Joie</c_textIcon></li>
+                </ul>
+
+                <button>Le vol des entreprises</button>
+            </template>
+        </c_presentation>
+    </c_section>
+
+    <!-- SECTION 6 -->
+    <c_section _type="text" class="bg-black">
+        <c_textTitle :_size="3">Club des 150</c_textTitle>
+        <c_carrousel :_autoScroll="true">
+            <c_basicSponsorItem v-for="sponsor in dataStore.getBasicSponsors" :_sponsor="sponsor"></c_basicSponsorItem>
+        </c_carrousel>  
+    </c_section>
+
+    <!-- SECTION 7 -->
+    <c_section :_size="100">
+        <c_presentation _asideSize="40" _color="secondary">
+            <!-- <template v-slot:title>
+                    <div class="c_overlayTitle">
+                    <p>Promouvoir un loisir</p>
+                    <h3>Responsable et <span class="c_hightlightText">durable</span></h3>
+                </div>
+            </template> -->
+            <template v-slot:aside>
+                <h3>L'envol <br>des rêves</h3>
+                <p>Le Festivale de Cerf-volant de Paris est une expérience pour toute la famille. Les enfants pourront participer à des ateliers créatifs, apprendre à construire et à faire voler leurs propres cerfs-volants, et s'émerveiller devant les spectacles spécialement conçus pour eux.</p>
+
+                <ul class="c_keywords">
+                    <li><c_textIcon _size="normal" _color="orange">Partage</c_textIcon></li>
+                    <li><c_textIcon _size="normal" _color="orange">Famille</c_textIcon></li>
+                    <li><c_textIcon _size="normal" _color="orange">Joie</c_textIcon></li>
+                </ul>
+
+                <button>Le vol des générations</button>
+            </template>
+        </c_presentation>
+    </c_section>
+    <br>
+    <br>
 </template>
 <script>
-import { c_videoLanding, c_presentation, c_countdown } from '@/components/custom/index';
-import { c_section, c_collapse } from '@/components/ui/wrappers/index';
+import { c_videoLanding, c_presentation, c_countdown, c_premiumSponsorItem, c_basicSponsorItem, c_googleMap } from '@/components/custom/index';
+import { c_section, c_collapse, c_carrousel } from '@/components/ui/wrappers/index';
 import { c_icon } from '@/components/ui/pictures/index'
+import { c_textTitle, c_textIcon, c_textFact } from '@/components/ui/texts/index'
+
+import { useDataStore } from '@/stores/data.store'
 
 export default {
     components: {
-        c_videoLanding, c_presentation, c_countdown,
-        c_section, c_collapse,
-        c_icon
+        c_videoLanding, c_presentation, c_countdown, c_premiumSponsorItem, c_basicSponsorItem, c_googleMap,
+        c_section, c_collapse, c_carrousel,
+        c_icon,
+        c_textTitle, c_textIcon, c_textFact
+    },
+    setup() {
+        const dataStore = useDataStore();
+        return { dataStore }
     },
 }
 </script>
@@ -107,8 +240,8 @@ export default {
             text-transform: uppercase;
             font-weight: bold;
             color: $c-1-100;
-            
-            &:hover{
+
+            &:hover {
                 padding-left: 1rem;
             }
         }
@@ -116,6 +249,15 @@ export default {
 
     & &-icon {
         margin-right: $m-4;
+    }
+}
+
+.c_keywords{
+    padding: $m-5 0;
+    li {
+        text-transform: uppercase;
+        font-size: $fs-4;
+        margin-bottom: $m-8;
     }
 }
 </style>

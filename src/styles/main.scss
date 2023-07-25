@@ -1,48 +1,93 @@
-*{
+* {
     box-sizing: border-box;
     font-family: Gotham;
 }
 
-body{
+body {
     background-color: rgb(211, 211, 211);
 }
 
-h1{
-    font-size: var(--fs-1);
+h1 {
+    font-size: $fs-1;
     font-weight: bold;
     text-transform: uppercase;
     color: var(--c-3-100);
 }
 
-h2{
-    
+h2 {
 }
 
-h3{
-    
+h3 {
+    font-size: $fs-3;
 }
 
-h4{
-    font-size: var(--fs-2);
+h4 {
+    font-size: $fs-4;
 }
 
-h5{
-    
+h5 {
+    font-size: $fs-4;
 }
 
 p {
-    color: var(--c-3-100);
+    color: $c-3-100;
 }
 
-a, .router-link, .router-link-active{
+a,
+.router-link,
+.router-link-active {
     transition: 1s;
-    &:hover{
+    &:hover {
         color: var(--c-1-100);
         cursor: pointer;
-        transition: .5s;
+        transition: 0.5s;
     }
 }
 
-.c_hightlightText{
+button {
+    padding: $m-7;
+    width: fit-content;
+    cursor: pointer;    
+}
+
+
+.c_hightlightText {
     color: $c-1-100;
+}
+
+.primary {
+    .c_hightlightText {
+        color: $c-1-100;
+    }
+
+    button {
+        background-color: $c-2-100;
+    }
+}
+
+.secondary {
+    .c_hightlightText {
+        color: $c-2-100;
+    }
+
+    button {
+        background-color: $c-1-100;
+    }
+}
+
+.c_overlayTitle {
+    background-color: $c-w-75;
+    padding: $m-4;
+    width: fit-content;
+    max-width: 45%;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p,
+    span {
+        color: $c-3-100;
+    }
 }

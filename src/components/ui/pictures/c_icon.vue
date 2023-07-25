@@ -1,5 +1,10 @@
 <template>
-    <img :src="`../..${baseUrl}assets/icons/${_name}.${_color}.svg`" class="c_icon" :class="_size" />
+    <div class="c_icon">
+        <img :src="`../..${baseUrl}assets/icons/${_name}.${_color}.svg`" :class="_size" />
+        <template v-if="_overlayLabel">
+            <p :class="`c_icon-label p-${_overlayPosition}`">{{ _overlayLabel }}</p>
+        </template>
+    </div>
 </template>
 
 <script>
@@ -17,44 +22,72 @@ export default {
         _color: {
             type: String,
             default: 'black'
-        }
+        },
+        _overlayLabel: {
+            type: String,
+        },
+        _overlayPosition: {
+            type: String,
+        },
     },
     data() {
         return {
-            baseUrl: import.meta.env.BASE_URL
+            baseUrl: import.meta.env.BASE_URL,
         }
     },
     computed: {},
     methods: {},
-    mounted() {}
+    mounted() { }
 }
 </script>
 
 <style lang="scss" scoped>
 .c_icon {
-    &.normal {
-        width: var(--fs-4);
-        height: var(--fs-4);
+    position: relative;
+
+    img {
+        &.xsmall {
+            width: $fs-5;
+            height: $fs-5;
+        }
+
+        &.small {
+            width: $fs-4;
+            height: $fs-4;
+        }
+
+        &.normal {
+            width: $fs-3;
+            height: $fs-3;
+        }
+
+
+        &.big {
+            width: $fs-2;
+            height: $fs-2;
+        }
+
+        &.huge {
+            width: $fs-1;
+            height: $fs-1;
+        }
     }
 
-    &.xsmall {
-        width: 12px;
-        height: 12px;
+    .c_icon-label {
+        display: none;
+        position: absolute;
+        right: 0;
+        margin-right: 100%;
+        margin-top: .2rem;
+        transition: all 1s ease;
     }
 
-    &.small {
-        width: 16px;
-        height: 16px;
-    }
-
-    &.big {
-        width: 32px;
-        height: 32px;
-    }
-
-    &.huge {
-        width: 48px;
-        height: 48px;
+    &:hover {
+        .c_icon-label {
+            display: inline;
+            margin-right: 200%;
+            transition: all 1s ease;
+        }
     }
 }
 </style>

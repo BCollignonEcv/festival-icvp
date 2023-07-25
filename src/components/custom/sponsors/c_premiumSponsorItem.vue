@@ -1,0 +1,68 @@
+<template>
+    <figure class="c_sponsor-item">
+        <img class="c_sponsor-item--img" :src="`../..${baseUrl}assets/images/logo.png`" alt="" srcset="">
+        <figcaption class="c_sponsor-item--content">
+            <h5 class="c_sponsor-item--title">{{ _sponsor.name }}</h5>
+            <p class="c_sponsor-item--description">{{ _sponsor.description }}</p>
+            <a class="c_sponsor-item--action" :href="_sponsor.website" target="_blank">En savoir +</a>
+        </figcaption>
+    </figure>
+</template>
+
+<script>
+export default {
+    data() {
+        return {
+            baseUrl: import.meta.env.BASE_URL,
+        };
+    },
+    props: {
+        _sponsor: Object,
+    },
+    mounted() {
+
+    },
+    methods: {}
+};
+</script>
+ 
+<style lang="scss" scoped>
+.c_sponsor-item {
+    flex: 1;
+    display: flex;
+    gap: $m-4;
+    flex-direction: row;
+    align-items: center;
+
+    &--img {
+        width: 150px;
+        height: 150px;
+        background-color: white;
+        border-radius: 100%;
+        object-fit: contain;
+        padding: 10px;
+    }
+
+    &--content {
+        display: flex;
+        flex-direction: column;
+        gap: $m-6;
+        height: 100%;
+
+        * {
+            color: $c-w-100;
+        }
+    }
+
+    &--title {
+        text-transform: uppercase;
+    }
+
+    &--description {}
+
+    &--action {
+        margin-top: auto;
+        color: $c-1-100;
+    }
+}
+</style>

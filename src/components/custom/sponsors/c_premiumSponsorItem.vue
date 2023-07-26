@@ -1,10 +1,10 @@
 <template>
     <figure class="c_sponsor-item">
-        <img class="c_sponsor-item--img" :src="`../..${baseUrl}assets/images/logo.png`" alt="" srcset="">
+        <img class="c_sponsor-item--img" :src="`../..${baseUrl}assets/images/${_sponsor.imgPath}`" alt="" srcset="">
         <figcaption class="c_sponsor-item--content">
             <h5 class="c_sponsor-item--title">{{ _sponsor.name }}</h5>
             <p class="c_sponsor-item--description">{{ _sponsor.description }}</p>
-            <a class="c_sponsor-item--action" :href="_sponsor.website" target="_blank">En savoir +</a>
+            <a v-if="_sponsor.website" class="c_sponsor-item--action" :href="_sponsor.website" target="_blank">En savoir +</a>
         </figcaption>
     </figure>
 </template>

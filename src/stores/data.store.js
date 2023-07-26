@@ -37,54 +37,17 @@ export const useDataStore = defineStore('data', {
         sponsors: {
             premium: [
                 {
-                    imgPath: "test",
-                    name: "Premium sponsor 1",
-                    description: "Premium sponsor description",
-                    website: "https://www.google.com"
-                },
-                {
-                    imgPath: "test",
-                    name: "Premium sponsor 2",
-                    description: "Premium sponsor description",
-                    website: "https://www.google.com"
-                },
-                {
-                    imgPath: "test",
-                    name: "Premium sponsor 3",
-                    description: "Premium sponsor description",
-                    website: "https://www.google.com"
+                    imgPath: "logo-sponsor.png",
+                    name: "Place à prendre",
+                    description: "Envie de faire parti du club des 3 ? Nous sommes à la recherche de partenaire privilégiés",
+                    // website: "https://www.google.com"
                 }
             ],
             basic: [
                 {
-                    imgPath: "test",
-                    name: "Basic sponsor 1",
-                    website: "https://www.google.com"
-                },
-                {
-                    imgPath: "test",
-                    name: "Basic sponsor 2",
-                    website: "https://www.google.com"
-                },
-                {
-                    imgPath: "test",
-                    name: "Basic sponsor 3",
-                    website: "https://www.google.com"
-                },
-                {
-                    imgPath: "test",
-                    name: "Basic sponsor 4",
-                    website: "https://www.google.com"
-                },
-                {
-                    imgPath: "test",
-                    name: "Basic sponsor 5",
-                    website: "https://www.google.com"
-                },
-                {
-                    imgPath: "test",
-                    name: "Basic sponsor 6",
-                    website: "https://www.google.com"
+                    imgPath: "logo-sponsor.png",
+                    name: "Pourquoi pas vous ?",
+                    // website: "https://www.google.com"
                 }
             ]
         },
@@ -109,7 +72,45 @@ export const useDataStore = defineStore('data', {
                 label: '131',
                 unit: 'Ha végétalisés'
             },
-        ]
+        ],
+        members: [
+            {
+                imgPath: "laurence-baulieu.png",
+                name: "Laurence Baulieu",
+                description: "Directrice de la société de production POINT TV depuis 2007 - DirCom - PLASTIC OMNIUM",
+                linkedin: "https://fr.linkedin.com/in/laurence-beaulieu"
+            },
+            {
+                imgPath: "roger-tessa-gambasi.png",
+                name: "Roger TESSA-GAMBASI",
+                description: "Description",
+                linkedin: "https://fr.linkedin.com/in/laurence-beaulieu"
+            },
+            {
+                imgPath: "sophie-chevallon.png",
+                name: "Sophie CHEVALLON",
+                description: "Description",
+                linkedin: "https://fr.linkedin.com/in/laurence-beaulieu"
+            },
+            {
+                imgPath: "nicolas-tharreau.png",
+                name: "Nicolas THARREAU",
+                description: "Description",
+                linkedin: "https://fr.linkedin.com/in/laurence-beaulieu"
+            },
+            {
+                imgPath: "tiphaine-piriou.png",
+                name: "Tiphaine PIRIOU",
+                description: "Description",
+                linkedin: "https://fr.linkedin.com/in/laurence-beaulieu"
+            },
+            {
+                imgPath: "marie-michele-vassiliou.jpg",
+                name: "Marie-Michèle VASSILIOU",
+                description: "Description",
+                linkedin: "https://fr.linkedin.com/in/laurence-beaulieu"
+            },
+        ],
     }),
     getters: {
         getBasicSponsors: (state) => {
@@ -120,6 +121,9 @@ export const useDataStore = defineStore('data', {
         },
         getFacts: (state) => {
             return state.facts;
+        },
+        getMembers: (state) => {
+            return state.members;
         },
     },
     actions: {}

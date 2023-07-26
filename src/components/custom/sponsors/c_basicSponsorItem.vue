@@ -2,7 +2,7 @@
     <!-- <a class="c_sponsor-item" :href="_sponsor.website" target="_blank"> -->
     <a class="c_sponsor-item" target="_blank">
         <figure class="c_sponsor-item--container">
-            <img class="c_sponsor-item--logo" :src="`../..${baseUrl}assets/images/logo.png`" alt="" srcset="">
+            <img class="c_sponsor-item--logo" :src="`../..${baseUrl}assets/images/${_sponsor.imgPath}`" alt="" srcset="">
             <figcaption class="c_sponsor-item--labels">
                 <h5 class="c_sponsor-item--title">{{ _sponsor.name }}</h5>
             </figcaption>

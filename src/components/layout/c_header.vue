@@ -55,6 +55,11 @@
                     </router-link>
                 </li>
                 <li class="c_headerNav-item">
+                    <router-link to="/equipe">
+                        <c_icon :_name="'team'" :_size="'small'" :_overlayLabel="'Equipe'" _overlayPosition="left"></c_icon>
+                    </router-link>
+                </li>
+                <li class="c_headerNav-item">
                     <router-link to="/contact">
                         <c_icon :_name="'chat'" :_size="'small'" :_overlayLabel="'Contact'" _overlayPosition="left"></c_icon>
                     </router-link>

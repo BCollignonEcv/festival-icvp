@@ -4,6 +4,7 @@ import { default as c_presentation } from './c_presentation.vue'
 import { default as c_basicSponsorItem } from './sponsors/c_basicSponsorItem.vue'
 import { default as c_premiumSponsorItem } from './sponsors/c_premiumSponsorItem.vue'
 import { default as c_googleMap } from './google/c_googleMap.vue'
+import { default as c_team } from './teams/c_team.vue'
 
 export {
     c_videoLanding,
@@ -11,5 +12,6 @@ export {
     c_countdown,
     c_basicSponsorItem,
     c_premiumSponsorItem,
-    c_googleMap
+    c_googleMap,
+    c_team
 }

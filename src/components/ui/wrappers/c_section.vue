@@ -14,7 +14,7 @@ export default {
         },
         _type: {
             type: String,
-            default: 'full'
+            default: 'unset'
         },
     },
 }
@@ -33,6 +33,10 @@ export default {
     }
 
     &-full{
+        padding: $m-4;
+    }
+
+    &-unset{
         padding: $m-2;
     }
 

@@ -116,7 +116,7 @@
 
     <!-- SECTION 5 -->
     <c_section :_size="100" >
-        <c_presentation _imgName="envol.jpg" _asideSize="40" _color="secondary">
+        <c_presentation _imgName="envol.jpg" :_asideSize="40" _color="secondary">
             <template v-slot:title>
                     <div class="c_overlayTitle">
                     <p>Promouvoir un loisir</p>
@@ -149,7 +149,7 @@
 
     <!-- SECTION 7 -->
     <c_section :_size="100">
-        <c_presentation _imgName="responsable.jpg" _asideSize="40" _color="secondary">
+        <c_presentation _imgName="responsable.jpg" :_asideSize="40" _color="secondary">
             <!-- <template v-slot:title>
                     <div class="c_overlayTitle">
                     <p>Promouvoir un loisir</p>

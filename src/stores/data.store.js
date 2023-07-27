@@ -77,37 +77,59 @@ export const useDataStore = defineStore('data', {
             {
                 imgPath: "laurence-baulieu.png",
                 name: "Laurence Baulieu",
-                description: "Directrice de la société de production POINT TV depuis 2007 - DirCom - PLASTIC OMNIUM",
+                description: [
+                    "Directrice de la société de production POINT TV depuis 2007",
+                    "DirCom",
+                    "PLASTIC OMNIUM"
+                ],
                 linkedin: "https://fr.linkedin.com/in/laurence-beaulieu"
             },
             {
                 imgPath: "roger-tessa-gambasi.png",
                 name: "Roger TESSA-GAMBASI",
-                description: "Description",
+                description: [
+                    "Champion du monde de cerf- volant",
+                    "Dirigeant R-SKY depuis 1996",
+                    "Organisateur des 7 des principaux festivals de cerfs-volants en France"
+                ],
                 linkedin: "https://fr.linkedin.com/in/laurence-beaulieu"
             },
             {
                 imgPath: "sophie-chevallon.png",
                 name: "Sophie CHEVALLON",
-                description: "Description",
+                description: [
+                    "Consultante en stratégie de Com et RP",
+                    "DirCom Saint-Gobain",
+                    "Conseillère Com cabinets ministériels"
+                ],
                 linkedin: "https://fr.linkedin.com/in/laurence-beaulieu"
             },
             {
                 imgPath: "nicolas-tharreau.png",
                 name: "Nicolas THARREAU",
-                description: "Description",
+                description: [
+                    "Directeur Général XDS",
+                    "Consultant Drouot",
+                    "Créateur Alfred"
+                ],
                 linkedin: "https://fr.linkedin.com/in/laurence-beaulieu"
             },
             {
                 imgPath: "tiphaine-piriou.png",
                 name: "Tiphaine PIRIOU",
-                description: "Description",
+                description: [
+                    "Directrice de l’agence TIPI&CO",
+                    "SOPEXA organisation des Pavillons France secteur agroalimentaire"
+                ],
                 linkedin: "https://fr.linkedin.com/in/laurence-beaulieu"
             },
             {
                 imgPath: "marie-michele-vassiliou.jpg",
                 name: "Marie-Michèle VASSILIOU",
-                description: "Description",
+                description: [
+                    "Experte Stratégie & Innovation",
+                    "Conférencière"
+                ],
                 linkedin: "https://fr.linkedin.com/in/laurence-beaulieu"
             },
         ],

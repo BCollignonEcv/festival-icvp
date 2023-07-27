@@ -46,6 +46,10 @@ export default {
     position: relative;
 
     img {
+        &.xxsmall {
+            width: .6rem;
+            height: .6rem;
+        }
         &.xsmall {
             width: $fs-5;
             height: $fs-5;

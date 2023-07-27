@@ -52,6 +52,12 @@ export default {
         } 
     }
 
+    &.black {
+        .c_presentation-aside {
+            background-color: $c-3-100;
+        } 
+    }
+
     &-img {
         height: 100%;
         width: 100%;

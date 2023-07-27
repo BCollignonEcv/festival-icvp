@@ -15,6 +15,7 @@ h1 {
 }
 
 h2 {
+    font-size: $fs-2;
 }
 
 h3 {
@@ -29,7 +30,8 @@ h5 {
     font-size: $fs-4;
 }
 
-p {
+p, span {
+    font-weight: normal;
     color: $c-3-100;
 }
 

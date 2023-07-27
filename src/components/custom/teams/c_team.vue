@@ -3,15 +3,26 @@
         <figure class="c_team-item" v-for="member in _members">
             <img :src="`../..${baseUrl}assets/images/${member.imgPath}`" alt="" srcset="">
             <figcaption>
-                <p class="c_team-item--description">{{ member.description }}</p>
-                <div class="c_flexContainer">
-                    <p class="c_team-item--name">{{ member.name }}</p>
-                    <c_icon _name="linkedin" _color="orange"></c_icon>
+                <div class="c_flexContainer c_flexContainer-text">
+                    <div>
+                        <p class="c_team-item--name">{{ member.name }}</p>
+                        <p class="c_team-item--description">
+                            <span class="c_team-item--descriptionLine" v-for="line in member.description">
+                                <c_textIcon _name="round" _size="xxsmall" _color="orange">
+                                    {{ line }}
+                                </c_textIcon>
+                            </span>
+                        </p>
+                    </div>
+                    <a :href="member.linkedin" target="_blank">
+                        <c_icon _name="linkedin" _color="orange"></c_icon>
+                    </a>
                 </div>
             </figcaption>
         </figure>
         <div class="c_team-item c_team-item-title">
-            <h2>L'equipe</h2>
+            <h2 class="c_team-item--name">L'equipe</h2>
+            <p>Team description</p>
         </div>
     </c_section>
 </template>
@@ -19,6 +30,7 @@
 <script>
 import { c_section } from '@/components/ui/wrappers/index';
 import { c_icon } from '@/components/ui/pictures/index'
+import { c_textIcon } from '@/components/ui/texts/index'
 
 export default {
     data() {
@@ -31,7 +43,8 @@ export default {
     },
     components: {
         c_section,
-        c_icon
+        c_icon,
+        c_textIcon
     },
     mounted() {
     },
@@ -67,24 +80,34 @@ export default {
             padding: $m-4;
             display: flex;
             flex-direction: column-reverse;
-            gap: $m-8;
 
-            p {
+            p,
+            span {
                 color: $c-w-100;
             }
+        }
 
-            .c_team-item--name {
-                font-size: $fs-3;
-            }
+        .c_team-item--name {
+            font-size: $fs-3;
+            margin-bottom: $m-6;
+        }
 
-            .c_team-item--description {
-
+        .c_team-item--description {
+            &Line {
+                display: block;
+                margin-bottom: $m-8;
             }
         }
     }
 
-    // &-item-title{
-    //     height: 100%;
-    // }
+    &-item-title {
+        height: 100%;
+        padding: $m-2;
+        background-color: $c-3-100;
+
+        >* {
+            color: $c-w-100;
+        }
+    }
 }
 </style>

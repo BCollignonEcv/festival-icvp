@@ -30,7 +30,7 @@
             </c_collapse>
             <c_collapse>
                 <template v-slot:header>
-                    <h4>Informations pratiques</h4>
+                    <h4>Informations pratiques et accès</h4>
                 </template>
                 <template v-slot:content>
                     <div class="c_flexContainer">

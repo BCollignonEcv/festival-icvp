@@ -1,1 +1,0 @@
-import{_ as o,c as s,a as c,b as t,d as a,r as n,o as _,e as r,w as p,f as i}from"./index-d638d17d.js";const d={components:{c_videoLanding:s,c_countdown:c,c_section:t,c_collapse:a}},m=i("h2",null,"Page programme",-1);function l(f,u,g,h,x,$){const e=n("c_section");return _(),r(e,{_size:100},{default:p(()=>[m]),_:1})}const B=o(d,[["render",l]]);export{B as default};

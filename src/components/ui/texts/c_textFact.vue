@@ -25,18 +25,32 @@ export default {
     justify-content: center;
 
     & &--label {
-        font-size: $fs-1;
+        font-size: $fs-huge;
         font-weight: bold;
         margin-bottom: $m-8;
+        color: white;
     }
 
     & &--unit {
-        font-size: $fs-3;
+        font-size: $fs-4;
         font-weight: medium;
+        color: white;
     }
 
     &+& {
         border-top: 1px solid $c-3-100;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: $m-4 $m-2;
+
+        & &--label {
+            font-size: $fs-1;
+        }
+
+        & &--unit {
+            font-size: $fs-5;
+        }
     }
 }
 </style>

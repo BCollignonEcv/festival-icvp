@@ -27,10 +27,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.c_icon {
+.c_img {
     &.normal {}
 
-    &.xsmall {}
+    &.xsmall {
+        width: 5rem;
+        height: auto;
+    }
 
     &.small {}
 

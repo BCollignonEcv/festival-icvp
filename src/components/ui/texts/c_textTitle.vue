@@ -41,7 +41,7 @@ export default {
     width: fit-content;
     text-transform: uppercase;
     padding-bottom: $m-7;
-    color: $c-w-100;
+    color: $c-1-100;
     margin-bottom: $m-4;
 
     &::after {
@@ -81,6 +81,12 @@ export default {
             left: auto;
             right: 0;
         }
+    }
+}
+
+.bg-terciary{
+    .c_title {
+        color: $c-w-100;
     }
 }
 </style>

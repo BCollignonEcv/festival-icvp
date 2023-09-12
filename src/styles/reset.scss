@@ -62,7 +62,7 @@ figure{
     margin-inline-end: 0;
 }
 
-input{
+input, textarea{
 	all: unset;
 }
 
@@ -79,4 +79,8 @@ hr {
 
 ::-webkit-scrollbar {
 	display: none;
+}
+
+*{
+	box-sizing: border-box;
 }

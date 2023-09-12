@@ -8,8 +8,8 @@
                 <slot name="title"></slot>
                 <c_icon :_name="'close'" @click="toggleFrame"></c_icon>
             </div>
-            <div class="c_sideFrame__content">
-                <slot name="content" @close="toggleFrame"></slot>
+            <div class="c_sideFrame__content" @click.stop="toggleFrame">
+                <slot name="content"></slot>
             </div>
         </section>
     </transition>
@@ -23,7 +23,7 @@ export default {
         c_icon
     },
     props: ['from'],
-    setup() {},
+    setup() { },
     data() {
         return {
             isOpen: false,
@@ -31,8 +31,8 @@ export default {
     },
     methods: {
         toggleFrame() {
-            this.isOpen = !this.isOpen
-        },
+            this.isOpen = !this.isOpen;
+        }
     }
 }
 </script>
@@ -55,20 +55,24 @@ $frameWidth: 50vw;
     background-color: $c-w-100;
     box-shadow: 0 0 0 999em rgba(0, 0, 0, 0.8);
 
+    @media screen and (max-width: 768px) {
+        width: $frameWidth*2;
+    }
+
     .left {
         left: 0;
     }
 
     &__header {
         height: $hs;
-        padding: 0 $m-4;
+        padding: $m-4;
         font-weight: bold;
         display: flex;
         gap: $m-4;
         align-items: center;
         justify-content: space-between;
 
-        img{
+        .c_icon {
             cursor: pointer;
         }
     }

@@ -22,7 +22,10 @@
         </figure>
         <div class="c_team-item c_team-item-title">
             <h2 class="c_team-item--name">L'equipe</h2>
-            <p>Team description</p>
+            <p>Rencontrez notre équipe passionnée qui rend tout cela possible ! Chacun d'entre nous apporte une touche
+                unique à cet événement féérique et durable. Nous sommes fiers de créer une expérience exceptionnelle autour
+                du cerf-volant, en mettant l'accent sur la responsabilité sociale et environnementale. Rejoignez-nous au
+                Paris Kite CHALLENGE pour une aventure inoubliable !</p>
         </div>
     </c_section>
 </template>
@@ -98,7 +101,16 @@ export default {
                 margin-bottom: $m-8;
             }
         }
+
+
     }
+
+    @media screen and (max-width: 768px) {
+        &-item {
+            width: 100%;
+        }
+    }
+
 
     &-item-title {
         height: 100%;

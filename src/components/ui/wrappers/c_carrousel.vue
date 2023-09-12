@@ -15,7 +15,7 @@ export default {
         _autoScroll: Boolean
     },
     mounted() {
-        if (this._autoScroll) { 
+        if (this._autoScroll) {
             // TODO : Implement auto scrolling 
         }
     },

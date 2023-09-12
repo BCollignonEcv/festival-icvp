@@ -73,6 +73,10 @@ export default {
         transition: max-height 0.2s ease-out;
         width: 90%;
 
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+
         p {
             font-size: $fs-6;
             font-weight: lighter;
@@ -84,6 +88,10 @@ export default {
     & &-icon {
         margin-right: $m-4;
         transition: all .2s ease-out;
+
+        @media screen and (max-width: 768px) {
+            margin-right: 0;
+        }
 
         &.open {
             transform: rotate(45deg);

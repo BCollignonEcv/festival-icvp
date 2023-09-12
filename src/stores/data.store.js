@@ -37,40 +37,39 @@ export const useDataStore = defineStore('data', {
         sponsors: {
             premium: [
                 {
-                    imgPath: "logo-sponsor.png",
-                    name: "Place à prendre",
-                    description: "Envie de faire parti du club des 3 ? Nous sommes à la recherche de partenaire privilégiés",
+                    imgPath: "ParisLaDefense-logo.png",
+                    name: "Paris La Défense",
+                    descriptions: ["Nous sommes en train de bâtir un nouveau modèle de développement fondé sur une vision plus durable et plus engageante sur le plan environnemental, avec pour ambition de devenir le premier quartier post-carbone de dimension mondiale"],
                     // website: "https://www.google.com"
                 }
             ],
             basic: [
                 {
                     imgPath: "logo-sponsor.png",
-                    name: "Pourquoi pas vous ?",
                     // website: "https://www.google.com"
                 }
             ]
         },
         facts: [
             {
-                label: '180 000',
-                unit: 'Salariés'
-            },
-            {
-                label: '70 000',
-                unit: 'Etudiants'
-            },
-            {
-                label: '50 000',
-                unit: 'Habitants'
-            },
-            {
                 label: '500',
-                unit: 'Entreprises'
+                unit: 'Cerfs-volants géants'
             },
             {
-                label: '131',
-                unit: 'Ha végétalisés'
+                label: '30',
+                unit: 'Pays représentés'
+            },
+            {
+                label: '10',
+                unit: 'Champions du monde'
+            },
+            {
+                label: '5',
+                unit: 'Innovations majeures'
+            },
+            {
+                label: '15 000',
+                unit: 'm²'
             },
         ],
         members: [

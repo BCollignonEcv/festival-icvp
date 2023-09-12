@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: rgb(211, 211, 211);
+    background-color: rgb(255, 255, 255);
 }
 
 h1 {
@@ -30,9 +30,11 @@ h5 {
     font-size: $fs-4;
 }
 
-p, span {
+p,
+span {
     font-weight: normal;
     color: $c-3-100;
+    font-size: $fs-6;
 }
 
 a,
@@ -49,9 +51,8 @@ a,
 button {
     padding: $m-7;
     width: fit-content;
-    cursor: pointer;    
+    cursor: pointer;
 }
-
 
 .c_hightlightText {
     color: $c-1-100;
@@ -91,5 +92,16 @@ button {
     p,
     span {
         color: $c-3-100;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 0;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .d-m {
+        display: none !important;
     }
 }

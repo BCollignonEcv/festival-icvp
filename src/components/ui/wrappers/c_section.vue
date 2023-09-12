@@ -21,27 +21,54 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .c_section {
 
     &-100 {
         height: 100vh;
     }
 
+    &-90 {
+        height: 90vh;
+    }
+
     &-0 {
         height: auto;
     }
 
-    &-full{
-        padding: $m-4;
+    &-full {
+        padding: 0 $m-4;
     }
 
-    &-unset{
+    &-unset {
         padding: $m-2;
     }
 
-    &-text{
+    &-text {
         padding: $m-2 calc($m-2*2);
+    }
+
+    @media screen and (max-width: 768px) {
+        &-100 {
+            height: auto;
+        }
+
+        &-90 {
+            height: auto;
+        }
+
+        &-0 {}
+
+        &-full {
+            padding: 0 $m-5;
+        }
+
+        &-unset {
+            padding: $m-5;
+        }
+
+        &-text {
+            padding: $m-4 ;
+        }
     }
 }
 </style>

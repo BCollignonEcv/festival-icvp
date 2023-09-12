@@ -1,7 +1,8 @@
 <template lang="">
     <div class="c_videoLanding">
-        <video class="c_videoLanding-video" autoplay loop muted>
+        <video class="c_videoLanding-video" autoplay loop muted preload="auto">
             <source :src="`../..${baseUrl}assets/videos/landing.mp4`" type="video/mp4">
+            <source :src="`../..${baseUrl}assets/videos/landing.webm`" type="video/webm">
         </video>
         <c_section :_size="100" class="c_videoOverlay">
             <div class="c_overlayItem c_overlayItem--img">
@@ -39,6 +40,7 @@ export default {
 .c_videoLanding {
     position: relative;
     height: 100vh;
+    width: 100vw;
     /* Ajustez la hauteur selon vos besoins */
     overflow: hidden;
 }
@@ -91,6 +93,27 @@ export default {
 
         .c_itemDescription {
             font-size: $fs-5;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+
+        &.c_section.c_section-unset {
+            padding-top: $m-2;
+        }
+
+
+        .c_overlayItem {
+            &.c_overlayItem--img {
+
+                img {
+                    min-width: auto;
+                    height: 30vw;
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
         }
     }
 }

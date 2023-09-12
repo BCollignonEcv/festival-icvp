@@ -9,15 +9,17 @@
             <c_countdown></c_countdown>
         </div>
         <div class="c_splited--content">
-            <h3>Découvrir le Festivale de Cerf-volant de Paris</h3>
+            <h3>Découvrir le Paris Kite Challenge</h3>
             <c_collapse :_collapsed="true">
                 <template v-slot:header>
                     <h4>Description</h4>
                 </template>
                 <template v-slot:content>
-                    <p>Le festival international de cerf-volant de PARIS va transformer l’esplanade de Paris la Défense en scène magique. Spectacles et innovations techniques vont assurer l’émerveillement du public pendant 5 jours.</p>
-                    <p>Des cerfs-volants géants vont s’élever dans le ciel de PARIS pour la première fois, une odyssée éclatante, féérique et démesurée. Baleines, oursons malins, fleurs, poissons tropicaux vont métamorphoser les lieux. Les meilleurs cerfs-volistes de la planète vont également assurer le spectacle au travers d’une compétition de free-style qui se déroulera aux pieds de la grande arche, porte du vent de PARIS. Un village d’exposition vous permettra de découvrir matériel, séjours et activités et de donner vie à vos rêves.</p>
+                    <p>Le Paris Kite CHALLENGE va métamorphoser l’esplanade de PARIS LA DEFENSE grâce à des spectacles aériens réalisés pour la première fois au cœur du premier quartier d’affaires européen. Spectacles et innovations techniques vont assurer l’émerveillement du public pendant 5 jours.</p>
+                    <p>Des cerfs-volants géants vont s'élever dans le ciel de PARIS pour la première fois, une odyssée éclatante, féérique et démesurée. Baleines, oursons malins, fleurs, poissons tropicaux vont métamorphoser les lieux. Les meilleurs cerfs-volistes de la planète vont également assurer le spectacle au travers d’une compétition de free-style qui se déroulera aux pieds de la grande arche, porte du vent de PARIS. Un village d’exposition vous permettra de découvrir matériel, séjours et activités et de donner vie à vos rêves.</p>
                     <p>Des entreprises pionnières, engagées pour un avenir durable vont également présenter leurs  innovations pour la première fois à PARIS. Solutions pour la production d’énergie, le transport, l’industrie, ces partenaires ont développé des techniques nouvelles pour utiliser la puissance du vent. Vous pourrez découvrir ces produits qui nous emmènent vers une société post carbone et dialoguer avec leurs représentants.</p>
+                    <p>Ce CHALLENGE est entièrement dédié et réalisé grâce à une énergie libre, durable et renouvelable : le vent.</p>
+                    <br>
                 </template>
             </c_collapse>
             <c_collapse>
@@ -84,20 +86,20 @@
             </c_collapse>
             <div class="c_fakeCollapseLink">
                 <div class="c_fakeCollapseLink-header" @click="toggleCollapse">
-                    <router-link to="/programme">Découvrir le programme</router-link>
-                    <c_icon :_name="'arrow'" :_color="'orange'" class="c_fakeCollapseLink-icon"></c_icon>
+                    <router-link to="/contact">Nous contacter</router-link>
+                    <c_icon :_name="'arrow'" :_color="'pink'" class="c_fakeCollapseLink-icon"></c_icon>
                 </div>
             </div>
         </div>
     </c_section>
 
     <!-- SECTION 3 -->
-    <c_section :_size="100">
+    <c_section :_size="90" _type="full">
         <c_presentation _color="primary" _imgName="landing.jpg">
             <template v-slot:title>
                 <div class="c_overlayTitle">
-                    <h3>Paris la Défense</h3>
-                    <p>Un lieu <span class="c_hightlightText">Unique</span></p>
+                    <h3>Paris La Défense</h3>
+                    <p>Un site unique<br>pour un événement <span class="c_hightlightText">exceptionnel</span></p>
                 </div>
             </template>
             <template v-slot:aside>
@@ -107,87 +109,82 @@
     </c_section>
 
     <!-- SECTION 4 -->
-    <c_section _type="text" class="bg-black">
-        <c_textTitle :_size="3">Club des 3</c_textTitle>
+    <c_section _type="text" class="bg-white">
+        <c_textTitle :_size="3">Club des partenaires</c_textTitle>
         <c_carrousel>
             <c_premiumSponsorItem v-for="sponsor in dataStore.getPremiumSponsors" :_sponsor="sponsor"></c_premiumSponsorItem>
         </c_carrousel>
     </c_section>
 
     <!-- SECTION 5 -->
-    <c_section :_size="100" >
-        <c_presentation _imgName="envol.jpg" :_asideSize="40" _color="secondary">
-            <template v-slot:title>
+    <c_section :_size="90" _type="full">
+        <c_presentation _imgName="envol.jpg" :_asideSize="30" _color="secondary">
+            <!-- <template v-slot:title>
                     <div class="c_overlayTitle">
-                    <p>Promouvoir un loisir</p>
-                    <h3>Responsable et <span class="c_hightlightText">durable</span></h3>
+                    
                 </div>
-            </template>
+            </template> -->
             <template v-slot:aside>
-                <h3>Une aventure<br>durable</h3>
-                <p>Les valeurs portées par le cerf-volant à travers les siècles retrouvent écho et notoriété à l'heure du réchauffement climatique.</p>
-
-                <ul class="c_keywords">
-                    <li><c_textIcon _size="normal" _color="orange">Durabilité</c_textIcon></li>
-                    <li><c_textIcon _size="normal" _color="orange">Energie</c_textIcon></li>
-                    <li><c_textIcon _size="normal" _color="orange">Inclusion</c_textIcon></li>
-                    <li><c_textIcon _size="normal" _color="orange">Joie</c_textIcon></li>
-                </ul>
-
-                <button>Le vol des entreprises</button>
+                <p>Un événement</p>
+                <h3>Responsable et durable</h3>
+                <p>Nous croyons en une vision de l'avenir qui allie la joie de vivre à la responsabilité envers la planète. Voler, faire voler, glisser, rêver, le vent nous permet de partager un bonheur simple. Nous avons créé un événement durable, solidaire et inclusif qui célèbre la joie, le rêve et la liberté de se projeter dans le monde post-carbone.</p>
+                
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <c_image _name="concept"></c_image>
             </template>
         </c_presentation>
     </c_section>
 
     <!-- SECTION 6 -->
-    <c_section _type="text" class="bg-black">
-        <c_textTitle :_size="3">Club des 150</c_textTitle>
-        <c_carrousel :_autoScroll="true">
-            <c_basicSponsorItem v-for="sponsor in dataStore.getBasicSponsors" :_sponsor="sponsor"></c_basicSponsorItem>
-        </c_carrousel>  
-    </c_section>
 
     <!-- SECTION 7 -->
-    <c_section :_size="100">
-        <c_presentation _imgName="responsable.jpg" :_asideSize="40" _color="secondary">
-            <!-- <template v-slot:title>
+    <!-- <c_section :_size="100" _type="full">
+        <c_presentation _imgName="responsable.jpg" :_asideSize="40" _color="white">
+            <template v-slot:title>
                     <div class="c_overlayTitle">
-                    <p>Promouvoir un loisir</p>
-                    <h3>Responsable et <span class="c_hightlightText">durable</span></h3>
+                    <p>Les vols thématiques</p>
+                    <h3></h3>
                 </div>
-            </template> -->
+            </template>
             <template v-slot:aside>
-                <h3>Un vol thématique chaque jour</h3>
-                <p>Un envol est un succès et une joie, il traduit l'accomplissement d'un projet, la réalisation d'un objectif, le plaisir de la réussite.</p>
+                <p><c_textIcon :_name="'calendar'" :_size="'small'">Mercredi 12H30</c_textIcon></p>
                 <br>
+                <h3>
+                    Le Vol des Entreprises<br>
+                </h3>
+                <p>Femmes et Hommes feront s'élever 150 cerfs-volants identiques marqués aux couleurs de leur entreprise pour afficher leur volonté d’une croissance décarbonée.</p>
+                <p>Ce vol sera réservé à des entreprises engagées dans un process post carbone.</p>
+                <p>Ce vol est une clé de communication unique pour valoriser l'innovation portée par les entreprises françaises.</p>
+                
+                <br>
+                <br>
+                <h4>Valorisez vos engagements</h4>
                 <br>
 
-                <h4>L'Envol des entreprises</h4>
-                <p>Un envol est un succès et une joie, il traduit l'accomplissement d'un projet, la réalisation d'un objectif, le plaisir de la réussite.</p>
+                <p>Quelques mois avant les jeux olympiques, les entreprises engagées dans le défi du monde post carbone afficheront leur engagement de façon spectaculaire.</p>
+                <p>Pour la première fois en Europe, au cœur du plus grand quartier d'affaires, elles offriront une scénographie exceptionnelle à des centaines de milliers de spectateurs venus rêver sous le ciel de PARIS.</p>
+                <p>Liberté, audace, et joie guideront les participants, les spectateurs et les partenaires.</p>
                 <br>
                 <br>
-                
-                <h4>L'Envol des générations</h4>
-                <p>Un envol est un succès et une joie, il traduit l'accomplissement d'un projet, la réalisation d'un objectif, le plaisir de la réussite.</p>
-                <br>
-                <br>
-                
-                <h4>L'Envol des artistes</h4>
-                <p>Un envol est un succès et une joie, il traduit l'accomplissement d'un projet, la réalisation d'un objectif, le plaisir de la réussite.</p>
-                <br>
-                <br>
-                
-                <button>En savoir +</button>
             </template>
         </c_presentation>
+    </c_section> -->
+    
+    <!-- SECTION 8 -->
+    <c_section _type="text" class="bg-extra d-m">
+        <c_textTitle :_size="3">En 1 mot</c_textTitle>
+        <c_video :_name="'teaser'"></c_video>
     </c_section>
-    <br>
     <br>
 </template>
 <script>
 import { c_videoLanding, c_presentation, c_countdown, c_premiumSponsorItem, c_basicSponsorItem, c_googleMap } from '@/components/custom/index';
 import { c_section, c_collapse, c_carrousel } from '@/components/ui/wrappers/index';
-import { c_icon } from '@/components/ui/pictures/index'
+import { c_icon, c_image, c_video } from '@/components/ui/pictures/index'
 import { c_textTitle, c_textIcon, c_textFact } from '@/components/ui/texts/index'
 
 import { useDataStore } from '@/stores/data.store'
@@ -196,7 +193,7 @@ export default {
     components: {
         c_videoLanding, c_presentation, c_countdown, c_premiumSponsorItem, c_basicSponsorItem, c_googleMap,
         c_section, c_collapse, c_carrousel,
-        c_icon,
+        c_icon, c_image, c_video,
         c_textTitle, c_textIcon, c_textFact
     },
     setup() {
@@ -235,6 +232,20 @@ export default {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .c_splited {
+        flex-direction: column;
+
+        &--title {
+            flex: auto;
+        }
+
+        &--content {
+            flex: auto;
+        }
+    }
+}
+
 .c_fakeCollapseLink {
     padding: $m-4 0;
 
@@ -249,7 +260,7 @@ export default {
             font-size: $fs-4;
             text-transform: uppercase;
             font-weight: bold;
-            color: $c-1-100;
+            color: $c-5-100;
 
             &:hover {
                 padding-left: 1rem;
@@ -259,11 +270,16 @@ export default {
 
     & &-icon {
         margin-right: $m-4;
+
+        @media screen and (max-width: 768px) {
+            margin-right: 0;
+        }
     }
 }
 
-.c_keywords{
+.c_keywords {
     padding: $m-5 0;
+
     li {
         text-transform: uppercase;
         font-size: $fs-4;

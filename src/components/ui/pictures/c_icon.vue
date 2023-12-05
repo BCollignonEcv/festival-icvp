@@ -1,6 +1,6 @@
 <template>
     <div class="c_icon">
-        <img :src="`../..${baseUrl}assets/icons/${_name}.${_color}.svg`" :class="_size" />
+        <img :src="`../..${baseUrl}assets/icons/${_name}.${_color}.svg`" :class="_size" :alt="'icon '+_name" />
         <template v-if="_overlayLabel">
             <p :class="`c_icon-label p-${_overlayPosition}`">{{ _overlayLabel }}</p>
         </template>

@@ -22,6 +22,6 @@ export default defineConfig({
       '@': path.resolve('src'),
     }
   },
-  // base: '/', // TO USE FOR PRODUCTION BUILD
-  base: '/festival-icvp/',
+  base: '/', // TO USE FOR PRODUCTION BUILD
+  // base: '/festival-icvp/',
 })

@@ -1,5 +1,5 @@
 <template>
-    <img :src="`../..${baseUrl}assets/images/${_name}.png`" class="c_img" :class="_size" />
+    <img :src="`../..${baseUrl}assets/images/${_name}.png`" class="c_img" :class="_size" :alt="'image '+_name"/>
 </template>
 
 <script>
